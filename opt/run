@@ -2,9 +2,6 @@
 
 set -e
 
-initfile=/etc/rundeck.init
-
 if ! [ -z "${SERVER_URL}" ]; then
  sed -i 's,#\?grails.serverURL\=.*,grails.serverURL\='${SERVER_URL}',g' /etc/rundeck/rundeck-config.properties
- touch ${initfile}
 fi
