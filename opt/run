@@ -2,8 +2,8 @@
 
 set -e
 
-if ! [ -z "${SERVER_IP}" ]; then
- sed -i -e 's/localhost/$SERVER_IP/g' /etc/rundeck/rundeck-config.properties /etc/rundeck/framework.properties
-fi
+sed -i -e 's/localhost/$SERVER_IP/g' /etc/rundeck/rundeck-config.properties /etc/rundeck/framework.properties
+
+touch /root/2
 
 exec "$@"
