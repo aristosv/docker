@@ -1,3 +1,5 @@
 #!/bin/bash
 
-sed -i 's,#\?grails.serverURL\=.*,grails.serverURL\='${SERVER_URL}',g' /etc/rundeck/rundeck-config.properties
+if ! [ -z "${SERVER_URL}" ]; then
+ sed -i 's,#\?grails.serverURL\=.*,grails.serverURL\='${SERVER_URL}',g' /etc/rundeck/rundeck-config.properties
+fi
