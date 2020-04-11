@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if ! [ -z "${SERVER_IP}" ]; then
+ sed -i "s|localhost|$SERVER_IP|g" /etc/rundeck/rundeck-config.properties /etc/rundeck/framework.properties
+fi
+
+service rundeckd start && tail -F /var/log/rundeck/service.log
