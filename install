@@ -1,0 +1,11 @@
+docker run -d \
+ --restart=always \
+ --name rundeck \
+ -h rundeck \
+ -e PUID=1001 \
+ -e PGID=1001 \
+ -e TZ=Europe/Nicosia \
+ --net=network \
+ -p 4440:4440 \
+ -e SERVER_IP=192.168.1.25 \
+ rundeck
