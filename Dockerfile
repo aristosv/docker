@@ -12,7 +12,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 EXPOSE 4440
 
-ADD https://raw.githubusercontent.com/aristosv/docker/master/opt/run /opt
+ADD https://raw.githubusercontent.com/aristosv/docker/master/run /opt
 
 RUN chmod +x /opt/run
 
