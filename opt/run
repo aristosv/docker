@@ -1,5 +1,3 @@
 #!/bin/bash
 
-echo "Hello-docker" > /root/hello.txt
-
-/bin/bash
+service rundeckd start && tail -F /var/log/rundeck/service.log
