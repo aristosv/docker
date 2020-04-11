@@ -3,5 +3,3 @@
 set -e
 
 touch /root/testfile
-
-exec $0
