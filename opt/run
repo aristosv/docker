@@ -1,3 +1,5 @@
 #!/bin/bash
 
-touch /root/test
+echo "Hello-docker" > /root/hello.txt
+
+/bin/bash
