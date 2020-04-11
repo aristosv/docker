@@ -1,7 +1,5 @@
 # docker
 
-testing docker
-
 wget https://raw.githubusercontent.com/aristosv/docker/master/Dockerfile
 
 docker build -t rundeck .
