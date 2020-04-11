@@ -12,8 +12,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 EXPOSE 4440
 
-ADD https://raw.githubusercontent.com/aristosv/docker/master/run /opt
+ADD https://raw.githubusercontent.com/aristosv/docker/master/entrypoint /opt
 
-RUN chmod +x /opt/run
+RUN chmod +x /opt/entrypoint
 
-ENTRYPOINT ["/opt/run"]
+ENTRYPOINT ["/opt/entrypoint"]
